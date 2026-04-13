@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammad Nuaym — Information Science Student, Developer & Creator. Portfolio showcasing projects, skills and certifications." />
+  <meta name="keywords" content="Muhammad Nuaym, portfolio, developer, VCE Mysore, Java, Python, robotics" />
+  <meta name="author" content="Muhammad Nuaym" />
+  <meta property="og:title" content="Muhammad Nuaym | Portfolio" />
+  <meta property="og:description" content="From Algorithms to Applications — One Line at a Time." />
+  <title>Muhammad Nuaym | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>⚡</text></svg>" />
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo" id="nav-logo">
+    &lt;<span>N</span>uaym /&gt;
+  </a>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#hero"           class="nav-link" data-section="hero">Home</a></li>
+    <li><a href="#about"          class="nav-link" data-section="about">About</a></li>
+    <li><a href="#education"      class="nav-link" data-section="education">Education</a></li>
+    <li><a href="#skills"         class="nav-link" data-section="skills">Skills</a></li>
+    <li><a href="#projects"       class="nav-link" data-section="projects">Projects</a></li>
+    <li><a href="#certifications" class="nav-link" data-section="certifications">Certs</a></li>
+    <li><a href="#contact"        class="nav-link" data-section="contact">Contact</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="#hero"           class="mob-nav-link" data-section="hero">Home</a>
+  <a href="#about"          class="mob-nav-link" data-section="about">About</a>
+  <a href="#education"      class="mob-nav-link" data-section="education">Education</a>
+  <a href="#skills"         class="mob-nav-link" data-section="skills">Skills</a>
+  <a href="#projects"       class="mob-nav-link" data-section="projects">Projects</a>
+  <a href="#certifications" class="mob-nav-link" data-section="certifications">Certifications</a>
+  <a href="#contact"        class="mob-nav-link" data-section="contact">Contact</a>
+</nav>
+
+<main>
+
+<!-- ══════════════════════════════════════════
+     ① HERO
+══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <div class="hero-content">
+        <p class="hero-greeting">// Hello, World! 👋</p>
+
+        <h1 class="hero-name">
+          Muhammad<br /><span class="highlight">Nuaym</span>
+        </h1>
+
+        <p class="hero-role">student.exe --mode=developer</p>
+
+        <p class="hero-tagline" id="hero-tagline">
+          <span id="typed-text"></span><span id="typed-cursor"></span>
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary" id="cta-projects">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
+            View Projects
+          </a>
+          <a href="A_Customised_CurVe_CV.pdf" download class="btn btn-outline" id="cta-resume">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Download CV
+          </a>
+          <a href="#contact" class="btn btn-outline" id="cta-contact">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Contact Me
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">9.3</span>
+            <span class="stat-label">// CGPA</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">2+</span>
+            <span class="stat-label">// Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">2</span>
+            <span class="stat-label">// Certifications</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <img src="profile.png" alt="Muhammad Nuaym — Profile Photo" class="hero-photo" id="hero-photo" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ② ABOUT
+══════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <p class="section-label reveal">// 01. about_me</p>
+    <h2 class="section-title reveal"><span class="accent">$</span> whoami</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="about-grid">
+      <div class="reveal-left">
+        <div class="about-text">
+          <p>
+            I'm <span class="keyword">Muhammad Nuaym</span>, a first-year
+            <span class="keyword">Information Science Engineering</span> student at
+            Vidyavardhaka College of Engineering, Mysore — driven by curiosity and
+            a love for building things from scratch.
+          </p>
+          <p>
+            My academic journey spans from <span class="keyword">robotics</span> to
+            <span class="keyword">3D modeling</span>, and I'm actively expanding my
+            skills in <span class="keyword">Data Structures, DBMS</span>, and modern
+            development tools. I believe in learning by doing — every project is a
+            new line in my story.
+          </p>
+          <p>
+            Career Objective: To leverage my technical skills and creativity
+            to build impactful solutions, contribute to open-source, and grow
+            into a well-rounded software engineer.
+          </p>
+        </div>
+
+        <div class="about-meta">
+          <div class="meta-item">
+            <span class="icon">📍</span>
+            <span>Location:</span>
+            <span class="val">Mysore, Karnataka, India</span>
+          </div>
+          <div class="meta-item">
+            <span class="icon">🎓</span>
+            <span>Degree:</span>
+            <span class="val">B.E. Information Science (2024–2028)</span>
+          </div>
+          <div class="meta-item">
+            <span class="icon">📧</span>
+            <span>Email:</span>
+            <span class="val">nuaym.shingeti@gmail.com</span>
+          </div>
+          <div class="meta-item">
+            <span class="icon">📞</span>
+            <span>Phone:</span>
+            <span class="val">+91 90367 55950</span>
+          </div>
+        </div>
+
+        <div class="about-langs" style="margin-top:1.75rem;">
+          <h3>// Languages Spoken</h3>
+          <div class="lang-tags">
+            <span class="lang-tag">English</span>
+            <span class="lang-tag">Arabic</span>
+            <span class="lang-tag">Urdu</span>
+            <span class="lang-tag">Hindi</span>
+            <span class="lang-tag">Kannada</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <div class="terminal-box">
+          <div class="terminal-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-title">nuaym@portfolio: ~</span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="t-prompt">❯</span> <span class="t-cmd">cat</span> <span class="t-out">profile.json</span></div>
+            <div>&nbsp;</div>
+            <div><span class="t-out">{</span></div>
+            <div>&nbsp;&nbsp;<span class="t-str">"name"</span>: <span class="t-val">"Muhammad Nuaym"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="t-str">"role"</span>: <span class="t-val">"IS Engineering Student"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="t-str">"cgpa"</span>: <span class="t-num">9.3</span>,</div>
+            <div>&nbsp;&nbsp;<span class="t-str">"location"</span>: <span class="t-val">"Mysore, KA"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="t-str">"available"</span>: <span class="t-num">true</span>,</div>
+            <div>&nbsp;&nbsp;<span class="t-str">"interests"</span>: [</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"Robotics"</span>,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"Data Structures"</span>,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"3D Design"</span>,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"Open Source"</span></div>
+            <div>&nbsp;&nbsp;],</div>
+            <div>&nbsp;&nbsp;<span class="t-str">"motto"</span>: <span class="t-val">"// One line at a time"</span></div>
+            <div><span class="t-out">}</span></div>
+            <div>&nbsp;</div>
+            <div><span class="t-prompt">❯</span> <span class="t-out">█</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ③ EDUCATION
+══════════════════════════════════════════ -->
+<section id="education">
+  <div class="container">
+    <p class="section-label reveal">// 02. education</p>
+    <h2 class="section-title reveal"><span class="accent">$</span> academic_journey</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="edu-card">
+          <div class="edu-degree">⚡ B.E. in Information Science Engineering</div>
+          <div class="edu-college">Vidyavardhaka College of Engineering, Mysore</div>
+          <div class="edu-meta">
+            <span class="edu-badge">📅 2024 – 2028</span>
+            <span class="edu-badge score">⭐ CGPA: 9.3</span>
+            <span class="edu-badge">🏛️ VCE, Mysore</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="edu-card">
+          <div class="edu-degree">📘 Pre-University Course (PUC / Class XII)</div>
+          <div class="edu-college">MICA College, Mysore</div>
+          <div class="edu-meta">
+            <span class="edu-badge">📅 2023</span>
+            <span class="edu-badge score">⭐ 95.17%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="edu-card">
+          <div class="edu-degree">📗 Secondary School (Class X)</div>
+          <div class="edu-college">Our Own English High School, Sharjah, UAE</div>
+          <div class="edu-meta">
+            <span class="edu-badge">📅 2021</span>
+            <span class="edu-badge score">⭐ 84.5%</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ④ SKILLS
+══════════════════════════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <p class="section-label reveal">// 03. skills</p>
+    <h2 class="section-title reveal"><span class="accent">$</span> tech_stack</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="skills-grid">
+
+      <!-- Programming Languages -->
+      <div class="skill-category reveal">
+        <div class="skill-cat-title">Programming Languages</div>
+        <div class="skill-bar-list">
+          <div class="skill-bar-item">
+            <div class="skill-bar-top">
+              <span class="skill-name">C</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top">
+              <span class="skill-name">Java</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top">
+              <span class="skill-name">Python</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="70"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Concepts -->
+      <div class="skill-category reveal">
+        <div class="skill-cat-title">Core Concepts</div>
+        <div class="skill-bar-list">
+          <div class="skill-bar-item">
+            <div class="skill-bar-top">
+              <span class="skill-name">Data Structures</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="78"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top">
+              <span class="skill-name">DBMS</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="70"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Technologies -->
+      <div class="skill-category reveal">
+        <div class="skill-cat-title">Tools & Technologies</div>
+        <div class="skill-tags">
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Arduino</span>
+          <span class="skill-tag">3D Modeling</span>
+          <span class="skill-tag">Basic Robotics</span>
+          <span class="skill-tag">Embedded Systems</span>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-category reveal">
+        <div class="skill-cat-title">Soft Skills</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Time Management</span>
+          <span class="skill-tag">Teamwork</span>
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Adaptability</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ⑤ PROJECTS
+══════════════════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <p class="section-label reveal">// 04. projects</p>
+    <h2 class="section-title reveal"><span class="accent">$</span> my_work</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: Obstacle Avoidance Robot -->
+      <article class="project-card reveal" id="project-robot">
+        <div class="project-top">
+          <div class="project-icon">🤖</div>
+          <span class="project-cat">IoT / Robotics</span>
+        </div>
+        <h3 class="project-title">Obstacle Avoidance Robot</h3>
+        <p class="project-desc">
+          Developed an autonomous robot capable of detecting and avoiding obstacles
+          using sensor inputs. Implemented direction-changing logic and applied
+          embedded system concepts for smooth real-time navigation.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Arduino</span>
+          <span class="tech-tag">Sensors</span>
+          <span class="tech-tag">Embedded C</span>
+          <span class="tech-tag">Basic Robotics</span>
+        </div>
+        <div class="project-status">Completed</div>
+      </article>
+
+      <!-- Project 2: 3D Model of Underpass -->
+      <article class="project-card reveal" id="project-3d">
+        <div class="project-top">
+          <div class="project-icon">🏗️</div>
+          <span class="project-cat">Design / Modeling</span>
+        </div>
+        <h3 class="project-title">3D Model of Underpass</h3>
+        <p class="project-desc">
+          Designed a realistic 3D model of an underpass structure focusing on
+          spatial planning and structural accuracy. Demonstrated strong visualization
+          and design skills across all stages of the project lifecycle.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">3D Modeling</span>
+          <span class="tech-tag">Spatial Planning</span>
+          <span class="tech-tag">Structural Design</span>
+        </div>
+        <div class="project-status">Completed</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ⑥ CERTIFICATIONS
+══════════════════════════════════════════ -->
+<section id="certifications">
+  <div class="container">
+    <p class="section-label reveal">// 05. certifications</p>
+    <h2 class="section-title reveal"><span class="accent">$</span> achievements</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="certs-grid">
+
+      <div class="cert-card reveal" id="cert-cisco">
+        <div class="cert-badge-icon">📊</div>
+        <div>
+          <div class="cert-name">Data Analytics Essentials</div>
+          <div class="cert-issuer">Cisco Networking Academy</div>
+          <div class="cert-date">Cisco NetAcad</div>
+        </div>
+        <div class="cert-ribbon">Verified</div>
+      </div>
+
+      <div class="cert-card reveal" id="cert-xr">
+        <div class="cert-badge-icon">🥽</div>
+        <div>
+          <div class="cert-name">Foundations for XR Development</div>
+          <div class="cert-issuer">EDSpire Research</div>
+          <div class="cert-date">March 2026</div>
+        </div>
+        <div class="cert-ribbon">Verified</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ⑦ CONTACT
+══════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label reveal">// 06. contact</p>
+    <h2 class="section-title reveal"><span class="accent">$</span> get_in_touch</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="contact-grid">
+
+      <div class="reveal-left">
+        <div class="contact-info">
+          <h3>Let's connect!</h3>
+          <p>
+            Whether you want to discuss a project, collaborate, or just say hi —
+            my inbox is always open. I'll do my best to get back to you!
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:nuaym.shingeti@gmail.com" class="contact-link" id="link-email">
+            <span class="link-icon">📧</span>
+            nuaym.shingeti@gmail.com
+          </a>
+          <a href="tel:+919036755950" class="contact-link" id="link-phone">
+            <span class="link-icon">📞</span>
+            +91 90367 55950
+          </a>
+          <a href="https://linkedin.com/in/muhammad-nuaym" target="_blank" rel="noopener noreferrer" class="contact-link" id="link-linkedin">
+            <span class="link-icon">💼</span>
+            linkedin.com/in/muhammad-nuaym
+          </a>
+          <a href="https://github.com/Muhammad-Nuaym" target="_blank" rel="noopener noreferrer" class="contact-link" id="link-github">
+            <span class="link-icon">🐙</span>
+            github.com/Muhammad-Nuaym
+          </a>
+          <a href="A_Customised_CurVe_CV.pdf" download class="contact-link" id="link-resume">
+            <span class="link-icon">📄</span>
+            Download Resume / CV
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="form-name">// Your Name</label>
+            <input type="text" id="form-name" name="name" class="form-input" placeholder="Muhammad Ali" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-email">// Your Email</label>
+            <input type="email" id="form-email" name="email" class="form-input" placeholder="hello@example.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="form-message">// Message</label>
+            <textarea id="form-message" name="message" class="form-textarea" placeholder="Hey Nuaym, I'd love to..." required></textarea>
+          </div>
+          <div class="form-msg" id="form-msg"></div>
+          <button type="submit" class="btn-submit" id="btn-submit">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>
+    &lt;<span class="accent">Muhammad Nuaym</span> /&gt; — Built with
+    <span class="accent">♥</span> &amp; Vanilla JS ·
+    Mysore, Karnataka · &copy; <span id="year"></span>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
