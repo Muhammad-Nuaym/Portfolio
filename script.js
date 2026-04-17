@@ -55,7 +55,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
     'Student. Builder. Problem-Solver.',
     'if (curious) { code(); }',
     'I turn coffee ☕ into code.',
-    'CGPA 9.3 | Mysore, Karnataka 📍'
+    'CGPA 9.37 | Mysore, Karnataka 📍'
   ];
 
   let phraseIdx = 0, charIdx = 0, deleting = false;
@@ -269,9 +269,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   const stats = document.querySelectorAll('.stat-value');
 
   function animateCounter(el) {
-    const target = parseFloat(el.textContent);
-    const isDecimal = target % 1 !== 0;
-    const suffix = el.textContent.replace(/[\d.]/g, '');
+    const raw = el.textContent;
+    const target = parseFloat(raw);
+    const suffix = raw.replace(/[\d.]/g, '');
+    const decimalPlaces = (raw.split('.')[1] || '').replace(/[^\d]/g, '').length;
     let current = 0;
     const duration = 1200;
     const steps = 40;
@@ -280,8 +281,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     const timer = setInterval(() => {
       current = Math.min(current + increment, target);
-      el.textContent = isDecimal
-        ? current.toFixed(1) + suffix
+      el.textContent = decimalPlaces > 0
+        ? current.toFixed(decimalPlaces) + suffix
         : Math.floor(current) + suffix;
       if (current >= target) clearInterval(timer);
     }, interval);
